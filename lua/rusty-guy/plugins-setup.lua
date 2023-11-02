@@ -44,18 +44,20 @@ return lazy.setup({
 	"saadparwaiz1/cmp_luasnip", -- for autocomple  "rafamadriz/friendly-snippets", -- useful snippets
 
 	-- managing & installing lsp servers, linters & formatters
-    {"williamboman/mason.nvim", dependencies = {
-    "WhoIsSethDaniel/mason-tool-installer.nvim",
-	"williamboman/mason-lspconfig.nvim", 
-    }}, -- in charge of managing lsp servers, linters & formatters
+	{
+		"williamboman/mason.nvim",
+		dependencies = {
+			"WhoIsSethDaniel/mason-tool-installer.nvim",
+			"williamboman/mason-lspconfig.nvim",
+		},
+	}, -- in charge of managing lsp servers, linters & formatters
 
 	-- configuring lsp servers
 	"neovim/nvim-lspconfig", -- easily configure language servers
 	"hrsh7th/cmp-nvim-lsp", -- for autocompletion
 
 	-- need to set this uo
-	{ "simrat39/rust-tools.nvim", ft = "rust", opts = function() end
- },
+	{ "simrat39/rust-tools.nvim", ft = "rust", opts = function() end },
 	"hrsh7th/nvim-cmp",
 	{
 		"rust-lang/rust.vim",

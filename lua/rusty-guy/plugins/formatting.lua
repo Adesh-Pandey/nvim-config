@@ -24,17 +24,19 @@ return {
 				timeout_ms = 500,
 			},
 		})
-		vim.keymap.set({
-			"n",
-			"v",
+		vim.keymap.set(
+			{
+				"n",
+				"v",
+			},
 			"<leader>mp",
 			function()
 				conform.format({
 					lsp_fallback = true,
-					async = true,
-					timeout_ms = true,
+					async = false,
+					timeout_ms = 500,
 				})
-			end,
-		})
+			end
+		)
 	end,
 }
