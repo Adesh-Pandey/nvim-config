@@ -1,4 +1,5 @@
 # nvim-config
+
 Personal nvim config
 
 Starting vim journey. As a side text editor so may not be fast. But will be updating timely as I add on plugins.
